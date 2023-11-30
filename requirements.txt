@@ -17,3 +17,6 @@ PyYAML
 fastapi
 uvicorn
 python-multipart
+
+# Folder monitoring
+watchdog
