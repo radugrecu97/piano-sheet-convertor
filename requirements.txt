@@ -1,7 +1,19 @@
+# Google Driver uploader
 google-auth
 google-auth-oauthlib
 google-auth-httplib2
 google-api-python-client
-music21
+
+# Piano sheet downloader
+nodejs-bin
+
+# Piano sheet convertor
 pianoplayer
+
+# Yaml reader
 PyYAML
+
+# FastApi
+fastapi
+uvicorn
+python-multipart
