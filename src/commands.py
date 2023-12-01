@@ -1,4 +1,6 @@
 from abc import ABC, abstractmethod
+from logger import logger
+
 
 class Command(ABC):
     @abstractmethod
@@ -13,4 +15,4 @@ class pianoSheetCommand(Command):
             return
 
         modified_file = event.pathname
-        print(f"File modification complete: {modified_file}")
+        logger.info(f"File modification complete: {modified_file}")

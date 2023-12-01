@@ -1,5 +1,5 @@
 import yaml
-
+from logger import logger
 
 def getYamlDict(path):
     # Open and read the YAML file
@@ -9,7 +9,7 @@ def getYamlDict(path):
             data = yaml.safe_load(file)
 
             # 'data' now contains the Python representation of the YAML content
-            print(data)
+            logger.info(data)
             return data
         except yaml.YAMLError as e:
-            print(f"Error reading YAML file: {e}")
+            logger.info(f"Error reading YAML file: {e}")

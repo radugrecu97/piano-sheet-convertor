@@ -2,6 +2,8 @@ import os
 from google.oauth2 import service_account
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
+from logger import logger
+
 
 def uploadFile(path, cfg):
     # Set the path to your JSON key file
@@ -33,6 +35,6 @@ def uploadFile(path, cfg):
     while response is None:
         status, response = request.next_chunk()
         if status:
-            print(f"Uploaded {int(status.progress() * 100)}%")
+            logger.info(f"Uploaded {int(status.progress() * 100)}%")
 
-    print(f"File ID: {response['id']}")
+    logger.info(f"File ID: {response['id']}")
