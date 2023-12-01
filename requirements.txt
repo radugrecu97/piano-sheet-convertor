@@ -1,14 +1,14 @@
 # Google Driver uploader
-google-auth
-google-auth-oauthlib
-google-auth-httplib2
-google-api-python-client
+# google-auth
+# google-auth-oauthlib
+# google-auth-httplib2
+# google-api-python-client
 
 # Piano sheet downloader
 nodejs-bin
 
 # Piano sheet convertor
-pianoplayer
+music21
 
 # Yaml reader
 PyYAML
@@ -19,4 +19,4 @@ uvicorn
 python-multipart
 
 # Folder monitoring
-watchdog
+pyinotify
